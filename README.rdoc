@@ -1,33 +1,4 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
-
------
+# original angular tutorial from first time and my computer
 
 Starting each time:
 rails s
@@ -61,6 +32,12 @@ end
 
 bundle install
 
+git init
+git add .
+git commit -m "first commit"
+git remote add origin git@github.com:jaredcohe/dbaseedu.git
+git push -u origin master
+
 rails g rspec:install
 
 rails g scaffold group name:string
@@ -89,7 +66,8 @@ npm install -g generator-angular
 mkdir client
 cd client
 
-# generate angular app: yo angular dbase-edu
+# generate angular app
+yo angular dbaseedu
 
 # start grunt server
 grunt serve
@@ -97,5 +75,8 @@ grunt serve
 # grunt-connect-proxy to forward requests from Grunt server on port 9000 to rails on port 3000
 npm install --save-dev grunt-connect-proxy
 # changes to Gruntfile.js
+
+# seed database
+
 
 
